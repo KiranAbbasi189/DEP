@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= post.title %></title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+<body>
+    <h1><%= post.title %></h1>
+    <p><%= post.content %></p>
+    <a href="/posts/<%= post._id %>/edit">Edit</a>
+    <form action="/posts/<%= post._id %>/delete" method="post">
+        <button type="submit">Delete</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>
